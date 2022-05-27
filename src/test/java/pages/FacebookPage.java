@@ -2,11 +2,12 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
 public class FacebookPage {
     public FacebookPage(){
-
-
+        PageFactory.initElements(Driver.getDriver(),this);
 
     }
 
@@ -19,11 +20,11 @@ public class FacebookPage {
     @FindBy (name = "login")
     public WebElement logintusu;
 
-    //@FindBy (className = "_9ay7")
-    //public WebElement mailKutusu;
+    @FindBy (className = "_9ay7")
+    public WebElement girilemediYaziElementi;
 
-    //@FindBy (id = "email")
-    //public WebElement mailKutusu;
+    @FindBy (xpath = "//button[@class='_42ft _4jy0 _9xo7 _4jy3 _4jy1 selected _51sy']")
+    public WebElement cokieButonu;
 
 
 
