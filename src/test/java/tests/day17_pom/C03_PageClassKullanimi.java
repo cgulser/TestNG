@@ -22,7 +22,7 @@ public class C03_PageClassKullanimi {
         // cikarsa cookies kabul edin
         Actions actions=new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        facebookPage.cokieButonu.click();
+        facebookPage.cookieButonu.click();
 
         // kullanici mail kutusuna rastgele bir isim yazdirin
         Faker faker = new Faker();
@@ -32,7 +32,7 @@ public class C03_PageClassKullanimi {
         facebookPage.sifreKutusu.sendKeys(faker.internet().password());
 
         // login butonuna basin
-        facebookPage.logintusu.click();
+        facebookPage.loginTusu.click();
 
         // giris yapilamadigini test edin
         Assert.assertTrue(facebookPage.girilemediYaziElementi.isDisplayed());
