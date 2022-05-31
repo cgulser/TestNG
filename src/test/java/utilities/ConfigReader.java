@@ -7,7 +7,7 @@ public class ConfigReader {
     public static Properties properties;
 
     static{
-        String dosyaYolu="target/configuration.properties";
+        String dosyaYolu="configuration.properties";
         try {
             FileInputStream fis=new FileInputStream(dosyaYolu);
             // fis dosyayolunu tanimladigimiz configuration.properties dosyasini okudu
