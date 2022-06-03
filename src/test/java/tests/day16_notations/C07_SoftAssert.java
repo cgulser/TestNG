@@ -16,13 +16,13 @@ public class C07_SoftAssert extends TestBase {
         driver.findElement(By.id("signin_button")).click();
 
         //3. Login kutusuna “username” yazin
-        WebElement login = driver.findElement(By.id("//input[@id='user_login']"));
+        WebElement login = driver.findElement(By.xpath("//input[@name='user_login']"));
         login.sendKeys("username");
         //4. Password kutusuna “password” yazin
-        WebElement passkutusu = driver.findElement(By.id("//input[@id='user_password']"));
+        WebElement passkutusu = driver.findElement(By.xpath("//input[@id='user_password']"));
         passkutusu.sendKeys("password");
         //5. Sign in tusuna basin
-        WebElement logintusu = driver.findElement(By.id("//input[@name='submit']"));
+        WebElement logintusu = driver.findElement(By.xpath("//input[@name='submit']"));
         logintusu.click();
         //6. Online banking menusu icinde Pay Bills sayfasina gidin
         //7. “Purchase Foreign Currency” tusuna basin
